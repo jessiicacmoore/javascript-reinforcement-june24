@@ -27,3 +27,4 @@ luckCheck('')
 // true
 // ERROR: luckCheck only works on a string of numbers
 // ERROR: luckCheck only works on a string of numbers
+// ERROR: luckCheck only works on a string of numbers
