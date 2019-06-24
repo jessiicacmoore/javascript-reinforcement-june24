@@ -11,8 +11,18 @@ function luckCheck(str) {
   let left = str.slice(0, Math.floor(strMiddle));
   let right = str.slice(Math.ceil(strMiddle));
 
-  console.log(sumStr(left) === sumStr(right));
+  if (/^[A-Za-z]+$/.test(str)) {
+    console.log('ERROR: luckCheck only works on a string of numbers')
+  } else {
+    console.log(sumStr(left) === sumStr(right));
+  }
+
 }
 
-
 luckCheck('56328116')
+luckCheck('hello')
+luckCheck('Goodbye')
+
+// true
+// ERROR: luckCheck only works on a string of numbers
+// ERROR: luckCheck only works on a string of numbers
